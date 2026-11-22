@@ -75,6 +75,13 @@ body{
     color: white;
     padding: 10px;
     border-radius: 30px;
+    cursor: pointer;
+    border: 1px solid #a434f0;
+}
+.categories p:hover{
+    transition: 2s;
+    background-color: transparent;
+    color:#a434f0;
 }
 .banner img{
     width: 100%;
@@ -92,6 +99,20 @@ body{
     text-align: center;
     color:black;
     padding: 10px;
+    animation-name: zoom;
+    animation-duration: 1s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+@keyframes zoom{
+    0%{
+        transform: scale(0);
+        opacity: 0;
+    }
+    100%{
+        transform: scale(1);
+        opacity: 1;
+    }
 }
 .recommended{
     padding: 10px;
